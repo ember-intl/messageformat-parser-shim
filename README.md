@@ -1,5 +1,7 @@
 # ember-intl-messageformat-parser
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ember-intl/ember-intl-messageformat-parser.svg)](https://greenkeeper.io/)
+
 A thin wrapper around [intl-messageformat-parser](https://github.com/yahoo/intl-messageformat-parser) that allows for `import IntlMessageFormatParser from 'intl-messageformat-parser';` from within your ember application.
 
 ## Installation
