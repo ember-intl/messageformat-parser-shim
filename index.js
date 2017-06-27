@@ -2,8 +2,9 @@
 'use strict';
 
 var path = require('path');
-var mergeTrees = require('broccoli-merge-trees');
 var Funnel = require('broccoli-funnel');
+var mergeTrees = require('broccoli-merge-trees');
+var UnwatchedDir = require('broccoli-source').UnwatchedDir;
 
 var messageFormatParserPath = path.dirname(require.resolve('intl-messageformat-parser'));
 
@@ -11,7 +12,7 @@ module.exports = {
   name: 'intl-messageformat-parser',
 
   treeForAddon: function(tree) {
-    var messageFormatParserTree = new Funnel(path.join(messageFormatParserPath, 'src'), {
+    var messageFormatParserTree = new Funnel(new UnwatchedDir(path.join(messageFormatParserPath, 'src')), {
       files: ['parser.js']
     });
 
