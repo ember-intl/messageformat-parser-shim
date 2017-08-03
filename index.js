@@ -1,23 +1,23 @@
 /* jshint node: true */
 'use strict';
 
-var path = require('path');
-var Funnel = require('broccoli-funnel');
-var mergeTrees = require('broccoli-merge-trees');
-var UnwatchedDir = require('broccoli-source').UnwatchedDir;
+const path = require('path');
+const Funnel = require('broccoli-funnel');
+const mergeTrees = require('broccoli-merge-trees');
+const UnwatchedDir = require('broccoli-source').UnwatchedDir;
 
-var messageFormatParserPath = path.dirname(require.resolve('intl-messageformat-parser'));
+const messageFormatParserPath = path.dirname(require.resolve('intl-messageformat-parser'));
 
 module.exports = {
   name: 'intl-messageformat-parser',
 
-  treeForAddon: function(tree) {
-    var messageFormatParserTree = new Funnel(new UnwatchedDir(path.join(messageFormatParserPath, 'src')), {
+  treeForAddon(tree) {
+    let messageFormatParserTree = new Funnel(new UnwatchedDir(path.join(messageFormatParserPath, 'src')), {
       files: ['parser.js']
     });
 
-    var trees = mergeTrees([messageFormatParserTree, tree]);
+    let addonTree = mergeTrees([messageFormatParserTree, tree]);
 
-    return this._super.treeForAddon.call(this, trees);
+    return this._super.treeForAddon.call(this, addonTree);
   }
 };
