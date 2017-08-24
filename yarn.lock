@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@ember-intl/intl-messageformat-parser@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@ember-intl/intl-messageformat-parser/-/intl-messageformat-parser-2.0.0.tgz#0f708ef3f4d84bdb12df268dceca9dd9a5d435ad"
+"@ember-intl/intl-messageformat-parser@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@ember-intl/intl-messageformat-parser/-/intl-messageformat-parser-2.0.1.tgz#d2f02c8f73642098817ca868593be63a3e1c34b3"
 
 "@glimmer/compiler@^0.22.3":
   version "0.22.3"

@@ -22,7 +22,7 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "@ember-intl/intl-messageformat-parser": "^2.0.0",
+    "@ember-intl/intl-messageformat-parser": "^2.0.1",
     "broccoli-funnel": "^1.2.0",
     "broccoli-merge-trees": "^2.0.0",
     "broccoli-source": "^1.1.0",
