@@ -8,7 +8,7 @@ const mergeTrees = require('broccoli-merge-trees');
 const UnwatchedDir = require('broccoli-source').UnwatchedDir;
 
 module.exports = {
-  name: 'intl-messageformat-parser',
+  name: '@ember-intl/intl-messageformat-parser',
 
   treeForAddon(tree) {
     let messageFormatParserPath = path.dirname(require.resolve('@ember-intl/intl-messageformat-parser'));
