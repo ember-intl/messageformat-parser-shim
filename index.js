@@ -11,7 +11,7 @@ module.exports = {
   name: 'intl-messageformat-parser',
 
   treeForAddon(tree) {
-    let messageFormatParserPath = path.dirname(require.resolve('intl-messageformat-parser'));
+    let messageFormatParserPath = path.dirname(require.resolve('@ember-intl/intl-messageformat-parser'));
     let messageFormatParserTree = funnel(new UnwatchedDir(path.join(messageFormatParserPath, 'src')), {
       files: ['parser.js']
     });
